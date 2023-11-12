@@ -34,15 +34,15 @@ export const makeDefaultConfig = (chainId: number, chainName: string, rpcUrl: st
   }
 }
 
-export const LOCAL_CONFIG: IConfig = makeDefaultConfig(1337, 'Localhost 8545', 'http://localhost:8545/')
-export const DEV_CONFIG: IConfig = makeDefaultConfig(14000, 'BAS devnet #1', 'https://rpc.dev-01.bas.ankr.com/', 'https://explorer.dev-01.bas.ankr.com/')
-export const METAAPES_CONFIG: IConfig = makeDefaultConfig(16350, 'MetaApes', 'https://bas.metaapesgame.com/bas_mainnet_full_rpc', 'https://explorer.dev-02.bas.ankr.com/')
+export const LOCAL_CONFIG: IConfig = makeDefaultConfig(16002, 'Localhost 8545', 'http://rpc.testnet.bitplanet.global:8545/')
+export const DEV_CONFIG: IConfig = makeDefaultConfig(16002, 'BAS devnet #1', 'http://rpc.testnet.bitplanet.global:8545/', 'http://explorer.testnet.bitplanet.global:4000/')
+export const BITPLANET_CONFIG: IConfig = makeDefaultConfig(16002, 'MetaApes', 'http://rpc.testnet.bitplanet.global:8545/', 'http://explorer.testnet.bitplanet.global:4000/')
 
 export const CONFIGS: Record<string, IConfig> = {
-  "localhost": makeDefaultConfig(1337, 'localhost', 'http://localhost:8545/'),
-  "devnet-1": makeDefaultConfig(14000, 'BAS devnet #1', 'https://rpc.dev-01.bas.ankr.com/', 'https://explorer.dev-01.bas.ankr.com/'),
-  "devnet-2": makeDefaultConfig(14001, 'BAS devnet #2', 'https://rpc.dev-02.bas.ankr.com/', 'https://explorer.dev-02.bas.ankr.com/'),
-  "metaapes-mainnet": makeDefaultConfig(16350, 'MetaApes', 'https://bas.metaapesgame.com/bas_mainnet_full_rpc', 'https://explorer.bas.metaapesgame.com/'),
+  "localhost": makeDefaultConfig(16002, 'localhost', 'http://rpc.testnet.bitplanet.global:8545/'),
+  "devnet-1": makeDefaultConfig(16002, 'BAS devnet #1', 'http://rpc.testnet.bitplanet.global:8545/', 'http://explorer.testnet.bitplanet.global:4000/'),
+  "devnet-2": makeDefaultConfig(16002, 'BAS devnet #2', 'http://rpc.testnet.bitplanet.global:8545/', 'http://explorer.testnet.bitplanet.global:4000/'),
+  "metaapes-mainnet": makeDefaultConfig(16002, 'MetaApes', 'http://rpc.testnet.bitplanet.global:8545/', 'http://explorer.testnet.bitplanet.global:4000/'),
 };
 
 export class BasStore {
