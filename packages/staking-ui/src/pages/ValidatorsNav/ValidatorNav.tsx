@@ -59,15 +59,15 @@ export const ValidatorsNav = observer((): ReactElement => {
         <ValidatorsCard
           active={activeValidators}
           loading={grid.isLoading}
-          title="Validators"
+          title="节点总数"
           total={totalValidators}
         />
 
         <BondedTokensCard
           loading={grid.isLoading}
-          title="Bonded Tokens"
+          title="节点质押总额"
           tokens={bondedTokens}
-          tokenSymbol="BAS"
+          tokenSymbol="RC"
         />
       </div>
       <br/>
@@ -76,7 +76,7 @@ export const ValidatorsNav = observer((): ReactElement => {
       <Divider/>
       <Drawer
         bodyStyle={{paddingBottom: 80}}
-        title="Register new validator"
+        title="申请加入备选节点"
         visible={registerValidatorVisible}
         width={500}
         onClose={() => {
@@ -86,7 +86,7 @@ export const ValidatorsNav = observer((): ReactElement => {
         <RegisterValidatorForm/>
       </Drawer>
       <Button icon={<PlusOutlined translate="yes"/>} size="large" type="primary"
-              onClick={() => setRegisterValidatorVisible(true)}>Register New Validator</Button>
+              onClick={() => setRegisterValidatorVisible(true)}>申请加入备选节点</Button>
       <br/>
       <br/>
       <br/>

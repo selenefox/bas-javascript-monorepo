@@ -195,7 +195,7 @@ const CreateProposalForm = observer((props: IGenerateThresholdKeyFormProps) => {
         <Col offset={2} span={20}>
           <Form.Item
             extra={<Typography.Text type="secondary">Type of proposal.</Typography.Text>}
-            label="Proposal Type"
+            label="提案类型"
             name="type"
             rules={[
               {required: true, message: 'Required field'},
@@ -245,7 +245,7 @@ const CreateProposalForm = observer((props: IGenerateThresholdKeyFormProps) => {
         <Col offset={2} span={20}>
           <Form.Item
             extra={<Typography.Text type="secondary">Description for this proposal.</Typography.Text>}
-            label="Description"
+            label="提案描述"
             name="description"
             rules={[
               {required: true, message: 'Required field'},
@@ -260,7 +260,7 @@ const CreateProposalForm = observer((props: IGenerateThresholdKeyFormProps) => {
         <Col offset={2} span={20}>
           <Form.Item
             extra={<Typography.Text type="secondary">Voting period.</Typography.Text>}
-            label="Voting Period"
+            label="投票有效期"
             name="votingPeriod"
           >
             <Select
@@ -297,7 +297,7 @@ const CreateProposalForm = observer((props: IGenerateThresholdKeyFormProps) => {
           loading={props.isLoading}
           type="primary"
         >
-          Propose
+          添加提案
         </Button>
       </Form.Item>
     </Form>

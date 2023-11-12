@@ -36,28 +36,28 @@ export const AccountData = observer(() => {
     <div className="accountDataCArd">
       <div className="">
         <Title level={5} type='secondary'>
-          Re-Delegate Amount
+          重新委托金额
         </Title>
         {
           availableAmount.isLoading
           ? <Spin size="default" />
           : (
             <Text strong className="cardBody">
-              {availableAmount.item} BAS
+              {availableAmount.item} RC
             </Text>
           )
         }
       </div>
       <div>
         <Title level={5} type='secondary'>
-          Total Delegated
+          委托总金额
         </Title>
         {
           delegatedAmount.isLoading
           ? <Spin size="default" />
           : (
             <Text strong  className="cardBody">
-              {delegatedAmount.item} BAS
+              {delegatedAmount.item} RC
             </Text>
           )
         }

@@ -1,4 +1,4 @@
-import {AppstoreOutlined, LockOutlined, WalletOutlined} from "@ant-design/icons";
+import {AppstoreOutlined, LockOutlined, WalletOutlined, GatewayOutlined} from "@ant-design/icons";
 import {Menu, Typography} from "antd";
 import {observer} from "mobx-react";
 import {ReactElement, useState} from "react";
@@ -35,16 +35,16 @@ const HomePage = observer((): ReactElement => {
         }}
       >
         <Menu.Item key="validator" icon={<LockOutlined translate="yes"/>}>
-          Validators
+          全部节点
         </Menu.Item>
         <Menu.Item key="governance" icon={<AppstoreOutlined translate="yes"/>}>
-          Governance
+          DAO治理
         </Menu.Item>
         <Menu.Item key="staking" icon={<WalletOutlined translate="yes"/>}>
-          Staking
+          质押管理
         </Menu.Item>
-        <Menu.Item key="bridge" icon={<WalletOutlined translate="yes"/>}>
-          Relay Hub
+        <Menu.Item key="bridge" icon={<GatewayOutlined translate="yes"/>}>
+          跨链桥
         </Menu.Item>
       </Menu>
       <br/>
